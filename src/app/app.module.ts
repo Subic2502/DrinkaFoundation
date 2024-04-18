@@ -1,4 +1,4 @@
-import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { LightboxModule } from 'ngx-lightbox';
 
@@ -18,6 +18,9 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ScrollService } from './scroll.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryLightboxComponent } from './gallery-lightbox/gallery-lightbox.component';
+import { DelaIPrijateljiComponent } from './dela-i-prijatelji/dela-i-prijatelji.component';
+import { DelaIPrijateljiPageComponent } from './dela-i-prijatelji-page/dela-i-prijatelji-page.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 
 @NgModule({
@@ -34,14 +37,18 @@ import { GalleryLightboxComponent } from './gallery-lightbox/gallery-lightbox.co
     AboutUsPageComponent,
     ContactPageComponent,
     GalleryLightboxComponent,
+    DelaIPrijateljiComponent,
+    DelaIPrijateljiPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LightboxModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TabsModule.forRoot()
   ],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  exports:[TabsModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

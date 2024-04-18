@@ -1,0 +1,31 @@
+.tabset/* app.component.css */
+
+/* Style the tabset */
+.tabset {
+  margin-top: 20px; /* Adjust top margin as needed */
+}
+
+/* Style the tab headers */
+.tabset .nav-tabs .nav-link {
+  background-color: #f5f5dc; /* Match the background color of the rest of the site */
+  color: #333; /* Set text color for tab headers */
+  border: none; /* Remove default border */
+  border-radius: 0; /* Remove default border radius */
+  margin-right: 10px; /* Adjust right margin as needed */
+}
+
+/* Style the active tab header */
+.tabset .nav-tabs .nav-link.active {
+  background-color: #6B736D; /* Match the active tab color with the existing gradient */
+  color: white; /* Set text color for active tab */
+}
+
+/* Style the tab content */
+.tabset .tab-content {
+  background-color: #ffffff; /* Match the background color of the rest of the site */
+  border: 1px solid #ccc; /* Add border to tab content */
+  border-radius: 4px; /* Add border radius to tab content */
+  padding: 10px; /* Add padding to tab content */
+}
+
+/* Optional: Adjust spacing or any other styles as needed */

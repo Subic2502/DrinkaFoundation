@@ -6,7 +6,7 @@ body,html{
 .scroll-container {
     display: flex;
     flex-direction: column;
-    margin-left: 5vh; /* Remove all margins */
+    margin-left: 5vh; 
     margin-right: 5vh;
 }
 

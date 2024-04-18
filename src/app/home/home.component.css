@@ -1,0 +1,76 @@
+/* styles.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;  
+    background: linear-gradient(to bottom, #6B736D, #7D867F);
+    position: relative;
+  }
+   
+  
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure the row takes up the full width of the container */
+}
+  
+.col-md-6 {
+  width: 50%; /* Make each column take up half of the row */
+  padding: 20px; /* Add padding as needed */
+}
+  
+/* Optional: Style for the content within the columns */
+.col-md-6 > div {
+  text-align: center;
+  color: #333;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.col-md-6 p, .col-md-6 h2 {
+  opacity: 1;
+  font-size: 3vw; /* Use vw units for dynamic font size */
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+/* Add this to your styles.css */
+.col-md-6 button {
+  background-color: #C1CCC3; /* Background color for the button */
+  color: #333; /* Text color for the button */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 2vw; /* Adjust the font size as needed */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.col-md-6 button:hover {
+  background-color: #6B736D; /* Change background color on hover */
+  color: #333; /* Change text color on hover */
+}
+
+.image {
+  max-width: 85%;
+  height: 85%;
+  display: block;
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  filter: grayscale(50%);
+}
+
+/* Add a wrapper for the image to control its dimensions */
+.col-md-6 > div > div {
+  height: 100%; /* Set the height to 100% to match the parent container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  

@@ -1,28 +1,71 @@
-import { Component, HostListener, ElementRef, OnInit,Renderer2,ViewChild } from '@angular/core';
-import { trigger, transition, style, animate,state } from '@angular/animations';
-import { ScrollService } from './scroll.service';
+import { Component, HostListener, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
+import 'intersection-observer';
+import { isPlatformBrowser } from '@angular/common';
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-
+  selector: 'app-home-page',
+  templateUrl: './home-page.component.html',
+  styleUrl: './home-page.component.css',
+  animations: [
+    trigger('fadeInAnimation', [
+      state('in', style({ opacity: 1 })),
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('10s ease-out', style({ opacity: 1 })),
+      ]),
+    ]),
+  ],
 })
-export class AppComponent implements OnInit {
+export class HomePageComponent {
+  public fadeInState = 'out';
+
+  // Callback function when the element is intersecting
+  public onIntersection(entries: IntersectionObserverEntry[]): void {
+    let isAnySectionIntersecting = false;
+  
+    entries.forEach((entry: IntersectionObserverEntry) => {
+      if (entry.isIntersecting) {
+        // Log a message when the section is intersecting
+        //console.log('Section is intersecting!');
+        isAnySectionIntersecting = true;
+      }
+    });
+  
+    this.fadeInState = isAnySectionIntersecting ? 'in' : 'out';
+  }
+  
+
+  // Intersection Observer setup
+  public observer: IntersectionObserver | null = null;
+
+  //-----------------------------------------Scrolling-----------------------------------*/
+
   private scrollTimeout: any;
 
-  constructor(private el: ElementRef, private scrollService: ScrollService) {}
+  constructor(
+    private el: ElementRef,
+    @Inject(PLATFORM_ID) private platformId: any
+  ) {}
 
   ngOnInit() {
-    // Initialize any setup code if needed
+    if (isPlatformBrowser(this.platformId)) {
+      const targetElement = document.querySelector('#home-section');
+
+      if (targetElement) {
+        this.observer = new IntersectionObserver(
+          this.onIntersection.bind(this),
+          { threshold: 0.5 } // Adjust threshold as needed
+        );
+
+        this.observer.observe(targetElement);
+      }
+    }
   }
 
   @HostListener('wheel', ['$event'])
   onWheel(event: WheelEvent) {
-    if (!this.scrollService.getEnableScrolling()) {
-      return;
-    }
-
     event.preventDefault();
 
     // Clear any existing scroll timeout
@@ -88,5 +131,4 @@ export class AppComponent implements OnInit {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
-  
 }

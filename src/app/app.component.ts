@@ -9,6 +9,9 @@ import { ScrollService } from './scroll.service';
 
 })
 export class AppComponent implements OnInit {
+  
+  
+  
   private scrollTimeout: any;
 
   constructor(private el: ElementRef, private scrollService: ScrollService) {}

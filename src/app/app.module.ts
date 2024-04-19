@@ -21,6 +21,7 @@ import { GalleryLightboxComponent } from './gallery-lightbox/gallery-lightbox.co
 import { DelaIPrijateljiComponent } from './dela-i-prijatelji/dela-i-prijatelji.component';
 import { DelaIPrijateljiPageComponent } from './dela-i-prijatelji-page/dela-i-prijatelji-page.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { CarouselModule } from './carousel/carousel.module';
 
 
 @NgModule({
@@ -36,7 +37,6 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     AboutMePageComponent,
     AboutUsPageComponent,
     ContactPageComponent,
-    GalleryLightboxComponent,
     DelaIPrijateljiComponent,
     DelaIPrijateljiPageComponent,
   ],
@@ -45,7 +45,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     AppRoutingModule,
     LightboxModule,
     BrowserAnimationsModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    CarouselModule
   ],
   exports:[TabsModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

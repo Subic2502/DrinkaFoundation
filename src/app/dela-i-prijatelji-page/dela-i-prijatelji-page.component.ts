@@ -104,4 +104,35 @@ export class DelaIPrijateljiPageComponent {
   }
   ]
 
+  /*---------------------------------------------------------------------------*/
+  imagesPrijalelji = [{
+    imageSrc:'assets/carousel/prijatelji/03%20Prijatelji/131.jpg',
+    imageAlt:'Prva slika'
+  },{
+    imageSrc:'assets/carousel/prijatelji/03%20Prijatelji/dejanMedakovic.jpg',
+    imageAlt:'druga slika'
+  },{
+    imageSrc:'assets/carousel/prijatelji/03%20Prijatelji/dobricaCosic.jpg',
+    imageAlt:'druga slika'
+  },{
+    imageSrc:'assets/carousel/prijatelji/03%20Prijatelji/dobricaCosic2.jpg',
+    imageAlt:'druga slika'
+  },{
+    imageSrc:'assets/carousel/prijatelji/03%20Prijatelji/matijaBeckovic.jpg',
+    imageAlt:'druga slika'
+  },{
+    imageSrc:'assets/carousel/prijatelji/03%20Prijatelji/micaPopovic.jpg',
+    imageAlt:'druga slika'
+  },{
+    imageSrc:'assets/carousel/prijatelji/03%20Prijatelji/rakoPetrovNogo.jpg',
+    imageAlt:'druga slika'
+  },{
+    imageSrc:'assets/carousel/prijatelji/03%20Prijatelji/stevanRaickovic.jpg',
+    imageAlt:'druga slika'
+  },{
+    imageSrc:'assets/carousel/prijatelji/03%20Prijatelji/stevanStanic.jpg',
+    imageAlt:'druga slika'
+  }
+  ]
+
 }

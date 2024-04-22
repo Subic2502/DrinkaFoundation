@@ -63,7 +63,7 @@ export class DelaIPrijateljiPageComponent {
   }
   ]
 
-  /*----------------------------------------------------------------------*/
+  /*-----------------------slobodno vajarstvo-----------------------------------------------*/
 
   imagesSlVajarstvo = [{
     imageSrc:'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/097.jpg',
@@ -104,7 +104,7 @@ export class DelaIPrijateljiPageComponent {
   }
   ]
 
-  /*---------------------------------------------------------------------------*/
+  /*-------------------------------prijatelji--------------------------------------------*/
   imagesPrijalelji = [{
     imageSrc:'assets/carousel/prijatelji/03%20Prijatelji/131.jpg',
     imageAlt:'Prva slika'
@@ -134,5 +134,10 @@ export class DelaIPrijateljiPageComponent {
     imageAlt:'druga slika'
   }
   ]
+  /**-------------dela-------------------- */
+  imagesDela = [{
+    imageSrc:'assets/carousel/dela/04%20Dela/162.jpg',
+    imageAlt:'Prva slika'
+  }]
 
 }

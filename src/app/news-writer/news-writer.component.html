@@ -18,7 +18,15 @@
         <label for="textVesti">Tekst vesti:</label>
         <textarea id="textVesti" name="textVesti" placeholder="Unesi text vesti ovde"></textarea>
       </div>
-      <button type="submit" class="submit-btn">Submit</button>
+      <div class="form-group">
+        <label for="photo">Prikaci slike:</label>
+        <input type="file" id="photos" name="photos" accept="image/*" multiple (change)="onFilesSelected($event)">
+        <button type="button" class="reset-btn" (click)="resetFiles()">Obrisi dodate slike</button>
+      </div>
+      <ul>
+        <li *ngFor="let file of selectedFiles">{{ file.name }}</li>
+      </ul>
+      <button type="submit" class="submit-btn">Objavi vest</button>
     </form>
   </div>
   

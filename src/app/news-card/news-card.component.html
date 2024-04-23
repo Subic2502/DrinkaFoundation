@@ -1,0 +1,13 @@
+<div class="news-card" (click)="onCardClick()">
+    <div class="news-image">
+      <img src='assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/113.jpg' alt="News Image">
+    </div>
+    <div class="news-details">
+      <h3>{{ title }}</h3>
+      <p>{{ text | slice:0:150 }}...</p>
+      <div class="news-footer">
+        <span><b>Autor: </b><i>{{author}}</i></span>
+        <span><b>Datum objave: </b><i>{{ publishDate  }}</i></span>
+      </div>
+    </div>
+  </div>

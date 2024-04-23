@@ -23,6 +23,8 @@ import { DelaIPrijateljiPageComponent } from './dela-i-prijatelji-page/dela-i-pr
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CarouselModule } from './carousel/carousel.module';
 import { NewsWriterComponent } from './news-writer/news-writer.component';
+import { NewsPageComponent } from './news-page/news-page.component';
+import { NewsCardComponent } from './news-card/news-card.component';
 
 
 @NgModule({
@@ -41,6 +43,8 @@ import { NewsWriterComponent } from './news-writer/news-writer.component';
     DelaIPrijateljiComponent,
     DelaIPrijateljiPageComponent,
     NewsWriterComponent,
+    NewsPageComponent,
+    NewsCardComponent,
   ],
   imports: [
     BrowserModule,

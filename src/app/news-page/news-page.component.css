@@ -1,0 +1,13 @@
+.container{
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    /* width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; */
+}
+
+.title{
+    margin-top: 20vh;
+    justify-content: center;
+    display: flex;
+}

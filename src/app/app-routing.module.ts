@@ -5,6 +5,7 @@ import { AboutMePageComponent } from './about-me-page/about-me-page.component';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { DelaIPrijateljiPageComponent } from './dela-i-prijatelji-page/dela-i-prijatelji-page.component';
+import { NewsWriterComponent } from './news-writer/news-writer.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'aboutUs', component: AboutUsPageComponent },
   { path: 'contact', component: ContactPageComponent },
   { path: 'delaIPrijatelji', component: DelaIPrijateljiPageComponent },
+  { path: 'news-writer', component: NewsWriterComponent},
 ];
 
 @NgModule({

@@ -1,24 +1,23 @@
-<br>
-<br><br>
-<br>
-<br>
-<tabset class="tabset">
-  <tab heading="Spomenici">
-    <h4>Otvoreni prvi tab</h4>
-    <app-carousel [images]="imagesSpomenici"></app-carousel>
-  </tab>
-  <tab heading="Slobodno vajarstvo">
-    <h4>Otvoreni drugi tab</h4>
-    <app-carousel [images]="imagesSlVajarstvo"></app-carousel>
-  </tab>
-  <tab heading="Prijatelji">
-    <h4>Otvoreni treci tab</h4>
-    <app-carousel [images]="imagesPrijalelji"></app-carousel>
-  </tab>
-  <tab heading="Popis dela">
-    <h4>Otvoreni cetvrti tab</h4>
-    <app-carousel [images]="imagesDela"></app-carousel>
-  </tab>
-</tabset>
+<div class="container">
+  <tabset [justified]="true">
+    <tab heading="Spomenici" >
+      <h4>Otvoreni prvi tab</h4>
+      <app-carousel [images]="imagesSpomenici" ></app-carousel>
+    </tab>
+    <tab heading="Slobodno vajarstvo">
+      <h4>Otvoreni drugi tab</h4>
+      <app-carousel [images]="imagesSlVajarstvo"></app-carousel>
+    </tab>
+    <tab heading="Prijatelji">
+      <h4>Otvoreni treci tab</h4>
+      <app-carousel [images]="imagesPrijalelji"></app-carousel>
+    </tab>
+    <tab heading="Popis dela">
+      <h4>Otvoreni cetvrti tab</h4>
+      <app-carousel [images]="imagesDela"></app-carousel>
+    </tab>
+  </tabset>
+</div>
+
 
 

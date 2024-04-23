@@ -1,14 +1,23 @@
+.container{
+  margin-top: 15vh;
+  width: 80%;
+}
+
+.container tabset{
+  justify-content: center;
+}
+
 .tabset/* app.component.css */
 
 /* Style the tabset */
 .tabset {
   margin-top: 20px; /* Adjust top margin as needed */
+  background-color: #333;
 }
 
 /* Style the tab headers */
 .tabset .nav-tabs .nav-link {
-  background-color: #f5f5dc; /* Match the background color of the rest of the site */
-  color: #333; /* Set text color for tab headers */
+  background-color: #333; /* Match the background color of the rest of the site */
   border: none; /* Remove default border */
   border-radius: 0; /* Remove default border radius */
   margin-right: 10px; /* Adjust right margin as needed */

@@ -1,25 +1,25 @@
 
 <div class="container">
-    <h2>Napisi text ovde</h2>
+    <h2>Napisi tekst ovde</h2>
     <form>
       <div class="form-group">
         <label for="name">Datum:</label>
         <input type="text" id="datum" name="Datum" placeholder="Unesi današnji datum ovde:">
       </div>
       <div class="form-group">
-        <label for="imeAutora">Ime autora texta:</label>
+        <label for="imeAutora">Ime autora teksta:</label>
         <input type="text" id="imeAutora" name="imeAutora" placeholder="Unesi ime autora texta ovde:">
       </div>
       <div class="form-group">
-        <label for="sazetak">Tekst sazetka:</label>
-        <textarea id="sazetak" name="sazetak" placeholder="Unesi text sazetka  ovde"></textarea>
+        <label for="sazetak">Tekst sažetka:</label>
+        <textarea id="sazetak" name="sazetak" placeholder="Unesi text sažetka  ovde"></textarea>
       </div>
       <div class="form-group">
         <label for="textVesti">Tekst vesti:</label>
-        <textarea id="textVesti" name="textVesti" placeholder="Unesi text vesti ovde"></textarea>
+        <textarea id="textVesti" name="textVesti" placeholder="Unesi tekst vesti ovde"></textarea>
       </div>
       <div class="form-group">
-        <label for="photo">Prikaci slike:</label>
+        <label for="photo">Prikači slike:</label>
         <input type="file" id="photos" name="photos" accept="image/*" multiple (change)="onFilesSelected($event)">
         <button type="button" class="reset-btn" (click)="resetFiles()">Obrisi dodate slike</button>
       </div>

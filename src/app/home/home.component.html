@@ -7,7 +7,7 @@
 <div class="container" (click)="handleClick()" >
   <div class="row">
     <div class="col-md-6">
-      <div>
+      <div class="image-container">
         <img class="image" src="assets/firstDiv.jpg" alt="Drinka Home Picture">
       </div>
     </div>
@@ -15,7 +15,7 @@
       <div>
         <h2>Dobrodošli na zvanični sajt fondacije "Drinka Radovanović"</h2>
           <p [@fadeInAnimation]="fadeInState">Za više informacija o radu naše fondacije, možete kliknuti na dugme ispod!</p>
-          <button >Vesti</button>
+          <button routerLink="/news" >Vesti</button>
       </div>
     </div>
   </div>

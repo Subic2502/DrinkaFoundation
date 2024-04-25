@@ -1,20 +1,61 @@
 <div class="container">
   <tabset [justified]="true" class="dela-tabset">
     <tab heading="Spomenici">
-      <h4>Otvoreni prvi tab</h4>
-      <app-carousel [images]="imagesSpomenici"></app-carousel>
+      <!-- <app-carousel [images]="imagesSpomenici"></app-carousel> -->
+      <p-galleria
+        [value]="imagesSpomenici"
+        [numVisible]="5"
+        [circular]="true"
+        [showItemNavigators]="true"
+        [showThumbnails]="false"
+        [containerStyle]="{ 'max-width': '100%' }"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img (click)="toggleFullScreen()" [src]="item.imageSrc" style="width: 100%; display: block"  />
+        </ng-template>
+      </p-galleria>
     </tab>
     <tab heading="Slobodno vajarstvo">
-      <h4>Otvoreni drugi tab</h4>
-      <app-carousel [images]="imagesSlVajarstvo"></app-carousel>
+      <p-galleria
+        [value]="imagesSlVajarstvo"
+        [numVisible]="5"
+        [circular]="true"
+        [showItemNavigators]="true"
+        [showThumbnails]="false"
+        [containerStyle]="{ 'max-width': '100%' }"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.imageSrc" style="width: 100%; display: block" />
+        </ng-template>
+      </p-galleria>
     </tab>
     <tab heading="Prijatelji">
-      <h4>Otvoreni treci tab</h4>
-      <app-carousel [images]="imagesPrijalelji"></app-carousel>
+      <p-galleria
+        [value]="imagesPrijalelji"
+        [numVisible]="5"
+        [circular]="true"
+        [showItemNavigators]="true"
+        [showThumbnails]="false"
+        [containerStyle]="{ 'max-width': '100%' }"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.imageSrc" style="width: 100%; display: block" />
+        </ng-template>
+      </p-galleria>
     </tab>
     <tab heading="Popis dela">
-      <h4>Otvoreni cetvrti tab</h4>
-      <app-carousel [images]="imagesDela"></app-carousel>
+      <p-galleria
+        [value]="imagesDela"
+        [numVisible]="5"
+        [circular]="true"
+        [showItemNavigators]="true"
+        [showThumbnails]="false"
+        [containerStyle]="{ 'max-width': '100%  ' }"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.imageSrc" style="width: 100%; display: block" />
+        </ng-template>
+      </p-galleria>
     </tab>
   </tabset>
 </div>

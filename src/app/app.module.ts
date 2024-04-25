@@ -25,6 +25,9 @@ import { CarouselModule } from './carousel/carousel.module';
 import { NewsWriterComponent } from './news-writer/news-writer.component';
 import { NewsPageComponent } from './news-page/news-page.component';
 import { NewsCardComponent } from './news-card/news-card.component';
+import { GalleriaModule } from 'primeng/galleria';
+import { FormsModule } from '@angular/forms';
+import * as screenfull from 'screenfull';
 
 
 @NgModule({
@@ -52,7 +55,9 @@ import { NewsCardComponent } from './news-card/news-card.component';
     LightboxModule,
     BrowserAnimationsModule,
     TabsModule.forRoot(),
-    CarouselModule
+    CarouselModule,
+    GalleriaModule,
+    FormsModule
   ],
   exports:[TabsModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

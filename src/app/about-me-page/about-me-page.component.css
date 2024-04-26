@@ -9,20 +9,16 @@
 }
 
 .container {
-    /*width: 80%;*/
+    width: 80%;
     background: linear-gradient(to bottom, #6B736D, #C1CCC3);
     margin-top: 2vh;
     margin-bottom: 5vh;
     border-radius: 8px;
-    /*margin: 2vh 10%; /* Adjust the value as needed */
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     overflow: auto;
-    /*------------------*/
-    margin-left: 5vw; 
-    margin-right: 5vw;
 }
 
 

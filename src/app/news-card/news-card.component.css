@@ -10,6 +10,9 @@
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     overflow: hidden;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
   .news-image img {
@@ -35,4 +38,6 @@
     font-size: 0.8em;
     background-color: #fff;
   }
+
+  
   

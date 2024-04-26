@@ -59,6 +59,7 @@
   max-width: 100%; /* Adjust if needed */
   max-height: 100%; /* Adjust if needed */
   overflow: hidden; /* Ensures content doesn't overflow */
+  padding: 10%;
 }
 
 .image {

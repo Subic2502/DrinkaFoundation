@@ -7,12 +7,18 @@ import screenfull from 'screenfull';
   styleUrl: './dela-i-prijatelji-page.component.css'
 })
 export class DelaIPrijateljiPageComponent {
+  imageDesc: string = ''; // Initialize image description
+
   toggleFullScreen() {
     if (screenfull.isEnabled) {
       screenfull.request(document.body); // Request full-screen mode
     } else {
       screenfull.exit(); // Exit full-screen mode
     }
+  }
+  updateImageDesc(event: any) {
+    const selectedItem = event.item;
+    this.imageDesc = selectedItem.imageAlt;
   }
 
   imagesSpomenici = [{

@@ -1,7 +1,13 @@
 <div class="container">
   <tabset [justified]="true" class="dela-tabset">
     <tab heading="Spomenici">
-      <!-- <app-carousel [images]="imagesSpomenici"></app-carousel> -->
+      <div class="row mt-2">
+        <div class="text-center lead">
+          <p>
+            <strong>Ispod slike mozete pročitati više o svakoj slici.</strong>
+          </p>
+        </div>
+      </div>
       <p-galleria
         [value]="imagesSpomenici"
         [numVisible]="5"
@@ -9,9 +15,19 @@
         [showItemNavigators]="true"
         [showThumbnails]="false"
         [containerStyle]="{ 'max-width': '100%' }"
+        (onItemChange)="updateImageDesc($event)"
       >
         <ng-template pTemplate="item" let-item>
-          <img (click)="toggleFullScreen()" [src]="item.imageSrc" style="width: 100%; display: block"  />
+          <img
+            (click)="toggleFullScreen()"
+            [src]="item.imageSrc"
+            style="width: 100%; display: block"
+          />
+          <div class="row mt-5">
+            <div class="text-center">
+              <p>{{ item.imageAlt }}</p>
+            </div>
+          </div>
         </ng-template>
       </p-galleria>
     </tab>

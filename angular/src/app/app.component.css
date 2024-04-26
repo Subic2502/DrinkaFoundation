@@ -1,0 +1,10 @@
+body,html{
+    background-color: #f5f5dc; /* Dirty white color */
+    background-image: url("../assets/bgScheme.jpeg");
+    background-size: auto; /* or contain, depending on your preference */
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
+

@@ -1,0 +1,68 @@
+body,html{
+    background-color: #f5f5dc; /* Dirty white color */
+}
+
+
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vh; 
+    margin-right: 5vh;
+}
+
+.scroll-section-home {
+    opacity: 1;
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove padding if any */
+    margin-top: 10vh;
+    scroll-margin-top: 10vh;
+    margin-bottom: 5vh; /* Add some bottom margin for spacing */
+    /*box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1); /* Increase spread and adjust opacity */
+    border: 2px solid #ccc; /* Set the border style and color */
+    border-radius: 8px; /* Add border radius for a rounded look */
+    position: relative;
+    z-index: 1; /* Set a higher z-index to bring the sections in front */
+    background: linear-gradient(to bottom, #6B736D, #7D867F);
+}
+
+.scroll-section-aboutMe {
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove padding if any */
+    margin-top: 12vh;
+    scroll-margin-top: 10vh;
+    margin-bottom: 5vh; /* Add some bottom margin for spacing */
+    /*box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1); /* Increase spread and adjust opacity */
+    border: 2px solid #ccc; /* Set the border style and color */
+    border-radius: 8px; /* Add border radius for a rounded look */
+    position: relative;
+    z-index: 1; /* Set a higher z-index to bring the sections in front */
+    background: linear-gradient(to bottom, #7D867F, #8E9991);
+}
+
+.scroll-section-aboutUs {
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove padding if any */
+    margin-top: 12vh;
+    scroll-margin-top: 10vh;
+    margin-bottom: 5vh; /* Add some bottom margin for spacing */
+    /*box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1); /* Increase spread and adjust opacity */
+    border: 2px solid #ccc; /* Set the border style and color */
+    border-radius: 8px; /* Add border radius for a rounded look */
+    position: relative;
+    z-index: 1; /* Set a higher z-index to bring the sections in front */
+    background: linear-gradient(to bottom, #8E9991, #B1BEB4);
+}
+
+.scroll-section-contact {
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove padding if any */
+    margin-top: 12vh;
+    scroll-margin-top: 10vh;
+    margin-bottom: 5vh; /* Add some bottom margin for spacing */
+    /*box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1); /* Increase spread and adjust opacity */
+    border: 2px solid #ccc; /* Set the border style and color */
+    border-radius: 8px; /* Add border radius for a rounded look */
+    position: relative;
+    z-index: 1; /* Set a higher z-index to bring the sections in front */
+    background: linear-gradient(to bottom, #B1BEB4, #C1CCC3);
+}

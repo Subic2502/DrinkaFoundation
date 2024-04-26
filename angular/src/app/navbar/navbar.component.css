@@ -1,0 +1,35 @@
+/* Add this to your styles.css */
+.bg-beige {
+  background: linear-gradient(to bottom, #3b3d3b, #6B736D);
+}
+
+a {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4em;
+  color: #333; /* Set default text color */
+  text-decoration: none; /* Remove underline from links */
+  position: relative; /* Set position to relative for pseudo-element */
+  transition: color 0.3s ease; /* Add a smooth transition effect for text color */
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #C1CCC3, #6B736D); /* Gradient color from left to right */
+  z-index: -1; /* Move the pseudo-element below the text */
+  transition: width 0.3s ease; /* Add a smooth transition effect for width */
+}
+
+a:hover::before {
+  width: 100%; /* Expand the pseudo-element to 100% on hover */
+}
+
+a:hover {
+  color: transparent; /* Make the text transparent on hover to reveal the gradient */
+}

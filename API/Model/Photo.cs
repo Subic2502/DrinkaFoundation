@@ -1,9 +1,25 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-[Table("Photos")]
+[Table("Photo")]
 public class Photo
 {
-    long Id{get;set;}
+    [Key]
+    int Id{get;set;}
     string stringOfPhoto{get;set;}
-    string NewsId{get;set;}
+    public int NewsId { get; set; }
+
+  // Navigation property for the many-to-one relationship with News
+  public News News { get; set; }
+
+  public Photo()
+  {
+    
+  }
+
+  public Photo(string stringPhoto,int newsId)
+  {
+    this.stringOfPhoto = stringPhoto;
+    this.NewsId = newsId;
+  }
 }

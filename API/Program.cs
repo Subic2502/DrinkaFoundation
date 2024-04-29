@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 var connectionString = builder.Configuration.GetConnectionString("AppDbConnectionString");
-builder.Services.AddDbContext<DataContex>(opt => opt.UseMySql(connectionString));
+builder.Services.AddDbContext<DataContex>(opt => opt.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString)));
 
 
 var app = builder.Build();

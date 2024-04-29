@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\API.csproj": {}
+    "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\API.csproj": {
+    "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\API.csproj",
+        "projectPath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Emilija\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\obj\\",
+        "outputPath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Emilija\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,16 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

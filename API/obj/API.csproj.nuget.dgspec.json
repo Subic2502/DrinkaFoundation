@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\API.csproj": {}
+    "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\API.csproj": {
+    "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\API.csproj",
         "packagesPath": "C:\\Users\\Emilija\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\obj\\",
+        "outputPath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Emilija\\AppData\\Roaming\\NuGet\\NuGet.Config"

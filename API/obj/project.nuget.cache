@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kiYFvA+vTFfed425iemTxC08wEGk2JTWOaZ9ZOzGJDeDJ87ActF0XAD5NnIutrA9e7l0hThr/W+txUpXx69JZA==",
+  "dgSpecHash": "8c12sxIQsqZnROXn/mT/vzKrxDC/AlmYMff9OJyQq1DSbnEYQ4wq3QXGl7IXNpLtPHNkwj9UkndTEYUzE7Z2rw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emilija\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Emilija\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

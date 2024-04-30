@@ -2,10 +2,17 @@
     <h1>Vesti</h1>
 </div>
 <div class="container">
+    <div *ngFor="let newsItem of newsList">
+        <h3>{{ newsItem.shortText }}</h3>
+        <p>{{ newsItem.longText }}</p>
+        <small>By {{ newsItem.author }} on {{ newsItem.date | date }}</small>
+        <div *ngFor="let photo of newsItem.listOfPhotos">
+            <p >{{photo.photoString}}</p>
+        </div>
+    </div>
     <app-news-card></app-news-card>
     <app-news-card></app-news-card>
     <app-news-card></app-news-card>
     <app-news-card></app-news-card>
     <app-news-card></app-news-card>
 </div>
-

@@ -28,6 +28,7 @@ import { NewsCardComponent } from './news-card/news-card.component';
 import { GalleriaModule } from 'primeng/galleria';
 import { FormsModule } from '@angular/forms';
 import * as screenfull from 'screenfull';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import * as screenfull from 'screenfull';
     TabsModule.forRoot(),
     CarouselModule,
     GalleriaModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   exports:[TabsModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

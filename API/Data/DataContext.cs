@@ -12,4 +12,5 @@ public class DataContex : DbContext
 
     public DbSet<News> News { get; set; }
     public DbSet<Photo> Photos { get; set; }
+
 }

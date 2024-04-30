@@ -1,6 +1,8 @@
 using Api.Entities;
 using API.Data;
 using API.Data.Migrations;
+using API.DTOs;
+using API.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -34,4 +36,33 @@ public class NewsController:ControllerBase
         .FirstOrDefault();
     }
 
+    [HttpPost("add-news")]
+    public bool AddNews(AddingNewsDto addingNewsDto)
+    {
+        try{
+           List<Photo> listOfPhotos =  AddPhotos(addingNewsDto);
+           News news = new News(addingNewsDto.ShortText,addingNewsDto.LongText,addingNewsDto.Author,addingNewsDto.Date);
+
+            _dataContext.News.Add(news);
+
+           news.ListOfPhotos = listOfPhotos;
+
+           _dataContext.SaveChanges();
+            return true;
+        }catch{
+            return false;
+        }
+    }
+
+    private List<Photo> AddPhotos(AddingNewsDto addingNewsDto)
+    {
+        List<string> listOfPhotosStrings = addingNewsDto.Photos;
+        List<Photo> listOfPhotos = new List<Photo>();
+        foreach(string photoString in listOfPhotosStrings)
+        {
+            Photo photo = new Photo(photoString);
+            listOfPhotos.Add(photo);
+        }
+        return listOfPhotos;
+    }
 }

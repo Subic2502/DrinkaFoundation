@@ -8,4 +8,10 @@ public class Photo
     public string PhotoString { get; set; }
     public int NewsId { get; set; }
     //public News News { get; set; }
+
+    public Photo(string photoString)
+    {
+        PhotoString = photoString;
+    }
+
 }

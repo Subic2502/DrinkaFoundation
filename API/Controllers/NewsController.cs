@@ -26,4 +26,12 @@ public class NewsController:ControllerBase
         .ToList();
     }
 
+    [HttpGet("{id}")]
+    public News GetOneNews(int id)
+    {
+        return _dataContext.News
+        .Include(n => n.ListOfPhotos)
+        .FirstOrDefault();
+    }
+
 }

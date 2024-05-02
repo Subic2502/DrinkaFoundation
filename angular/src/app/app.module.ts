@@ -29,6 +29,7 @@ import { GalleriaModule } from 'primeng/galleria';
 import { FormsModule } from '@angular/forms';
 import * as screenfull from 'screenfull';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NewsViewerPageComponent } from './news-viewer-page/news-viewer-page.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     NewsWriterComponent,
     NewsPageComponent,
     NewsCardComponent,
+    NewsViewerPageComponent,
   ],
   imports: [
     BrowserModule,

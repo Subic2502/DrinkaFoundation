@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { News } from '../Data/News';
 import { HttpClient } from '@angular/common/http';
 import { Observable, Subscription, catchError, map, throwError } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-news-page',
@@ -17,7 +18,7 @@ export class NewsPageComponent implements OnInit {
     this.fetchNewsData();
   }
 
-  constructor(private http:HttpClient){}
+  constructor(private http:HttpClient,private router:Router){}
 
   fetchNewsData(): void {
     this.http.get<News[]>('http://localhost:5024/api/News/')
@@ -31,6 +32,11 @@ export class NewsPageComponent implements OnInit {
         this.newsList = data;
         console.log('News data loaded', this.newsList);
       });
+  }
+
+  onCardClickListener(newsId :number){
+    console.log("Kliknuo");
+    this.router.navigate(['/news-viewer'], { queryParams: { id: newsId } });
   }
 
 }

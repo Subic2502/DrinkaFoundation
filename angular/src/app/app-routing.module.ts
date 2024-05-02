@@ -7,6 +7,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { DelaIPrijateljiPageComponent } from './dela-i-prijatelji-page/dela-i-prijatelji-page.component';
 import { NewsWriterComponent } from './news-writer/news-writer.component';
 import { NewsPageComponent } from './news-page/news-page.component';
+import { NewsViewerPageComponent } from './news-viewer-page/news-viewer-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'delaIPrijatelji', component: DelaIPrijateljiPageComponent },
   { path: 'news-writer', component: NewsWriterComponent},
   { path: 'news', component: NewsPageComponent},
+  { path: 'news-viewer', component: NewsViewerPageComponent},
 ];
 
 @NgModule({

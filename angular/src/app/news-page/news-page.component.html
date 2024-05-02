@@ -11,7 +11,7 @@
         </div>
     </div> -->
     <div *ngFor="let newsItem of newsList">
-        <app-news-card [text]="newsItem.shortText" [author]="newsItem.author" [publishDate]="newsItem.date"></app-news-card>    
+        <app-news-card [title]="newsItem.title" [text]="newsItem.shortText" [author]="newsItem.author" [publishDate]="newsItem.date"></app-news-card>    
     </div>
     <!-- <app-news-card [title]=""></app-news-card>
     <app-news-card></app-news-card>

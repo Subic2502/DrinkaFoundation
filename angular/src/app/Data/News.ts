@@ -8,5 +8,6 @@ export interface News {
     author: string;
     date: Date; // Assuming Date from JavaScript's Date object
     listOfPhotos: Photo[]; // Assuming Photo interface is defined (see below)
+    title:string;
   }
   

@@ -4,6 +4,7 @@ namespace Api.Entities;
 
 public class News{
     public int Id { get; set; }
+    public string Title{ get; set; }
     public string ShortText { get; set; }
 
     public string LongText { get; set; }
@@ -12,12 +13,13 @@ public class News{
 
     public ICollection<Photo> ListOfPhotos { get; set; }
 
-    public News(string shortText, string longText, string author, DateOnly date)
+    public News(string shortText, string longText, string author, DateOnly date, string title)
     {
         ShortText = shortText;
         LongText = longText;
         Author = author;
         Date = date;
+        Title = title;
     }
 
 }

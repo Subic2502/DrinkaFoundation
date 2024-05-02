@@ -9,7 +9,7 @@ export class NewsCardComponent implements OnInit{
   @Input() news: any;
   @Output() cardClick = new EventEmitter<any>();
 
-  title="Neki naslov";
+  @Input() title:string |undefined;
   @Input() text:string | undefined;
   @Input() author:string|undefined;
   @Input() publishDate :Date | undefined;

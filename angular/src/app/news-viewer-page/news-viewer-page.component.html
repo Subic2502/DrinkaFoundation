@@ -1,1 +1,14 @@
-<p>news-viewer-page works!</p>
+<div class="title">
+    <h1>{{news?.title}}</h1>
+</div>
+<div class="container">
+    {{news?.longText}}
+    <div class="row">
+        <div class="col-6">
+            Autor: {{news?.author}}
+        </div>
+        <div class="col-6">
+            Datum: {{news?.date}}
+        </div>
+    </div>
+</div>

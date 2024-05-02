@@ -10,9 +10,9 @@ export class NewsCardComponent implements OnInit{
   @Output() cardClick = new EventEmitter<any>();
 
   title="Neki naslov";
-  text="Ide neki tekst ispod asjdkajsdksjad askdjaksjd asdjaskdj kajsdkajskd asjdkasjdkasj asdjaksjdkasjd  askdjaskdjka askdjaksdjka askdjaskdj";
-  author="Uros Subic";
-  publishDate = "25.2.2001";
+  @Input() text:string | undefined;
+  @Input() author:string|undefined;
+  @Input() publishDate :Date | undefined;
   
 
   ngOnInit(): void {

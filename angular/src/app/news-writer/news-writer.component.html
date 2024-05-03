@@ -1,36 +1,34 @@
-
 <div class="container">
-    <h2>Napisi tekst ovde</h2>
-    <form>
-      <div class="form-group">
-        <label for="name">Datum:</label>
-        <input type="text" id="datum" name="Datum" placeholder="Unesi današnji datum ovde u formatu [GGGG-MM-DD]:">
-      </div>
-      <div class="form-group">
-        <label for="imeAutora">Ime autora teksta:</label>
-        <input type="text" id="imeAutora" name="imeAutora" placeholder="Unesi ime autora texta ovde:">
-      </div>
-      <div class="form-group">
-        <label for="imeAutora">Naslov:</label>
-        <input type="text" id="naslov" name="imeAutora" placeholder="Unesi naslov teksta ovde:">
-      </div>
-      <div class="form-group">
-        <label for="sazetak">Tekst sažetka:</label>
-        <textarea id="sazetak" name="sazetak" placeholder="Unesi text sažetka  ovde"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="textVesti">Tekst vesti:</label>
-        <textarea id="textVesti" name="textVesti" placeholder="Unesi tekst vesti ovde"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="photo">Prikači slike:</label>
-        <input type="file" id="photos" name="photos" accept="image/*" multiple (change)="onFilesSelected($event)" >
-        <button type="button" class="reset-btn" (click)="resetFiles()">Obrisi dodate slike</button>
-      </div>
-      <ul>
-        <li *ngFor="let file of selectedFiles">{{ file.name }}</li>
-      </ul>
-      <button type="submit" class="submit-btn">Objavi vest</button>
-    </form>
-  </div>
-  
+  <h2>Napisi tekst ovde</h2>
+  <form #newsForm="ngForm" (ngSubmit)="onSubmit()" id="form">
+    <div class="form-group">
+      <label for="Date">Datum:</label>
+      <input type="text" id="Date" name="Date" [(ngModel)]="formData.Date" placeholder="Unesi današnji datum ovde u formatu [GGGG-MM-DD]:">
+    </div>
+    <div class="form-group">
+      <label for="Author">Ime autora teksta:</label>
+      <input type="text" id="Author" name="Author" [(ngModel)]="formData.Author" placeholder="Unesi ime autora texta ovde:">
+    </div>
+    <div class="form-group">
+      <label for="naslov">Naslov:</label>
+      <input type="text" id="naslov" name="imeAutora" [(ngModel)]="formData.Title" placeholder="Unesi naslov teksta ovde:">
+    </div>
+    <div class="form-group">
+      <label for="ShortText">Tekst sažetka:</label>
+      <textarea id="ShortText" name="ShortText" [(ngModel)]="formData.ShortText" placeholder="Unesi text sažetka  ovde"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="LongText">Tekst vesti:</label>
+      <textarea id="LongText" name="LongText" [(ngModel)]="formData.LongText" placeholder="Unesi tekst vesti ovde"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="Photos">Prikači slike:</label>
+      <input type="file" id="Photos" name="Photos" accept="image/*" multiple (change)="onFilesSelected($event)">
+      <button type="button" class="reset-btn" (click)="resetFiles()">Obrisi dodate slike</button>
+    </div>
+    <ul>
+      <li *ngFor="let file of selectedFiles">{{ file.name }}</li>
+    </ul>
+    <button type="submit" class="submit-btn">Objavi vest</button>
+  </form>
+</div>

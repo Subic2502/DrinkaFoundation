@@ -41,7 +41,7 @@ public class NewsController:ControllerBase
     {
         try{
            List<Photo> listOfPhotos =  AddPhotos(addingNewsDto);
-           News news = new News(addingNewsDto.ShortText,addingNewsDto.LongText,addingNewsDto.Author,addingNewsDto.Date,"#toDo u news-writer");
+        News news = new News(addingNewsDto.ShortText,addingNewsDto.LongText,addingNewsDto.Author,addingNewsDto.Date,addingNewsDto.Title);
 
             _dataContext.News.Add(news);
 

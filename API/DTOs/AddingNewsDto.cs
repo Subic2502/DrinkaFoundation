@@ -7,18 +7,20 @@ public class AddingNewsDto
     public string LongText { get; set; }
 
     public string Author { get; set; }
+    public string Title { get; set; }
 
     public DateOnly Date { get; set; }
     
     public List<string> Photos { get; set; }
 
-    public AddingNewsDto(string shortText, string longText, string author, DateOnly date, List<string> photos)
+    public AddingNewsDto(string shortText, string longText, string author, DateOnly date, List<string> photos, string title)
     {
         ShortText = shortText;
         LongText = longText;
         Author = author;
-        Date = date;     
+        Date = date;
         Photos = photos;
+        Title = title;
     }
 
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sHXoxzgBhF+kBvUV/kMc0CXN5Iye4d0CF3BKlvQISWxWtvbvITyBdExTx3qB9RLA+vvGj3phTY3QSOpnY7+1/A==",
+  "dgSpecHash": "CAHB2VUGw9/hUxWXJZPSv05UZy7RrTCtJi2Q3MwL5OOXV2ASUZf+gGdJ2W5U3aRTmZEhJqVDanLKnjD0xe1g1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\api\\API.csproj",
+  "projectFilePath": "c:\\Users\\Emilija\\Documents\\GitHub\\DrinkaFoundationSite\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emilija\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Emilija\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

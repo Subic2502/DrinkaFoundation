@@ -1,7 +1,10 @@
 <div class="title">
     <h1>Vesti</h1>
 </div>
-<div class="container">
+<div *ngIf="newsList == null" class="container">
+    <H3>Učitavam...</H3>
+</div>
+<div *ngIf="newsList != null" class="container">
     <!-- <div *ngFor="let newsItem of newsList">
         <h3>{{ newsItem.shortText }}</h3>
         <p>{{ newsItem.longText }}</p>

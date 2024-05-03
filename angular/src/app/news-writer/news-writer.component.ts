@@ -26,7 +26,7 @@ export class NewsWriterComponent implements OnInit {
     Title: '',
     ShortText: '',
     LongText: '',
-    Photos: []
+    Photos: this.selectedFiles
   };
 
   constructor(private http: HttpClient) { }
@@ -58,11 +58,8 @@ export class NewsWriterComponent implements OnInit {
       })
     )
     .subscribe(Boolean => {
-      console.log('News data loaded' );
+      console.log('Added news to database');
     });
-
-    // You can now process the form data as needed
-    // (e.g., send to server, store locally)
 
     // Optional: Clear form after submission (if desired)
     // this.formData = {

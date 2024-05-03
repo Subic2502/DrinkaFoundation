@@ -39,6 +39,7 @@ public class NewsController:ControllerBase
     [HttpPost("add-news")]
     public bool AddNews(AddingNewsDto addingNewsDto)
     {
+        Console.Write("Uslo");
         try{
            List<Photo> listOfPhotos =  AddPhotos(addingNewsDto);
         News news = new News(addingNewsDto.ShortText,addingNewsDto.LongText,addingNewsDto.Author,addingNewsDto.Date,addingNewsDto.Title);

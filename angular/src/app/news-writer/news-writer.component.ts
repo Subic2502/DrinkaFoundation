@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { catchError, throwError } from 'rxjs';
 
 interface FormData {
   Date: string;
@@ -8,7 +9,7 @@ interface FormData {
   Title: string;
   ShortText: string;
   LongText: string;
-  Photos:File[]
+  Photos: File[]
 }
 
 @Component({
@@ -25,10 +26,10 @@ export class NewsWriterComponent implements OnInit {
     Title: '',
     ShortText: '',
     LongText: '',
-    Photos:[]
+    Photos: []
   };
 
-  constructor(private http : HttpClient){}
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
 
@@ -48,22 +49,30 @@ export class NewsWriterComponent implements OnInit {
   onSubmit() {
     // Access form data in formData object
     console.log(this.formData);
-    const response = this.http.post<any>('http://localhost:5024/api/News/add-news', this.formData);
 
-    console.log(response);
+    this.http.post<boolean>('http://localhost:5024/api/News/add-news', this.formData)
+    .pipe(
+      catchError(error => {
+        console.error('Error', error);
+        return throwError(() => new Error('Error'));
+      })
+    )
+    .subscribe(Boolean => {
+      console.log('News data loaded' );
+    });
 
     // You can now process the form data as needed
     // (e.g., send to server, store locally)
 
     // Optional: Clear form after submission (if desired)
-    this.formData = {
-      Date: '',
-      Author: '',
-      Title: '',
-      ShortText: '',
-      LongText: '',
-      Photos:[]
-    };
+    // this.formData = {
+    //   Date: '',
+    //   Author: '',
+    //   Title: '',
+    //   ShortText: '',
+    //   LongText: '',
+    //   Photos:[]
+    // };
   }
 
 }

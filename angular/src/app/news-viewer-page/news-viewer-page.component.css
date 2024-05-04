@@ -3,6 +3,8 @@
     background: linear-gradient(to bottom, #6B736D, #C1CCC3);
     margin-top: 2vh;
     margin-bottom: 5vh;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
@@ -30,7 +32,7 @@ p {
 }
 
 .title{
-    margin-top: 20vh;
+    margin-top: 15vh;
     justify-content: center;
     display: flex;
     font-family: "Chakra Petch", sans-serif;

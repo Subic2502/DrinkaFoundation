@@ -3,6 +3,7 @@ import { News } from '../Data/News';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { catchError, throwError } from 'rxjs';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-news-viewer-page',
@@ -13,7 +14,7 @@ export class NewsViewerPageComponent implements OnInit {
 
   news: News | undefined;
 
-  constructor(private http: HttpClient,private route: ActivatedRoute) { }
+  constructor(private http: HttpClient,private route: ActivatedRoute,private sanitizer:DomSanitizer) { }
 
   ngOnInit(): void {
     console.log("uslo u oninit");
@@ -35,5 +36,9 @@ export class NewsViewerPageComponent implements OnInit {
       console.log("Nema ida");
     }
   }
+  getPhotoUrl(photoString: string) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(`data:image/jpeg;base64,${photoString}`); // Adjust content type as needed
+  }
+  
 
 }

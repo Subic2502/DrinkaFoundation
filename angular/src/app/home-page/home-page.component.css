@@ -16,7 +16,7 @@ body,html{
     padding: 0; /* Remove padding if any */
     margin-top: 10vh;
     scroll-margin-top: 10vh;
-    margin-bottom: 5vh; /* Add some bottom margin for spacing */
+    
     /*box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1); /* Increase spread and adjust opacity */
     border: 2px solid #ccc; /* Set the border style and color */
     border-radius: 8px; /* Add border radius for a rounded look */
@@ -30,7 +30,6 @@ body,html{
     padding: 0; /* Remove padding if any */
     margin-top: 12vh;
     scroll-margin-top: 10vh;
-    margin-bottom: 5vh; /* Add some bottom margin for spacing */
     /*box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1); /* Increase spread and adjust opacity */
     border: 2px solid #ccc; /* Set the border style and color */
     border-radius: 8px; /* Add border radius for a rounded look */
@@ -44,7 +43,6 @@ body,html{
     padding: 0; /* Remove padding if any */
     margin-top: 12vh;
     scroll-margin-top: 10vh;
-    margin-bottom: 5vh; /* Add some bottom margin for spacing */
     /*box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1); /* Increase spread and adjust opacity */
     border: 2px solid #ccc; /* Set the border style and color */
     border-radius: 8px; /* Add border radius for a rounded look */

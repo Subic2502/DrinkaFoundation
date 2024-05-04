@@ -33,7 +33,7 @@ public class NewsController:ControllerBase
     {
         return _dataContext.News
         .Include(n => n.ListOfPhotos)
-        .FirstOrDefault();
+        .FirstOrDefault(n => n.Id == id);
     }
 
     [HttpPost("add-news")]

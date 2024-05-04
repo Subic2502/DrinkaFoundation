@@ -69,16 +69,16 @@ export class NewsWriterComponent implements OnInit {
     // Access form data in formData object
     console.log(this.formData);
 
-    // this.http.post<boolean>('http://localhost:5024/api/News/add-news', this.formData)
-    //   .pipe(
-    //     catchError(error => {
-    //       console.error('Error', error);
-    //       return throwError(() => new Error('Error'));
-    //     })
-    //   )
-    //   .subscribe(Boolean => {
-    //     console.log('Added news to database');
-    //   });
+    this.http.post<boolean>('http://localhost:5024/api/News/add-news', this.formData)
+      .pipe(
+        catchError(error => {
+          console.error('Error', error);
+          return throwError(() => new Error('Error'));
+        })
+      )
+      .subscribe(Boolean => {
+        console.log('Added news to database');
+      });
 
     // Optional: Clear form after submission (if desired)
     // this.formData = {

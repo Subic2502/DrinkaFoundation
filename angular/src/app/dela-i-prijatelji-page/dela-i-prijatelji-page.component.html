@@ -14,20 +14,14 @@
         [circular]="true"
         [showItemNavigators]="true"
         [showThumbnails]="false"
-        [containerStyle]="{ 'max-width': '100%' }"
+        [containerStyle]="{  }"
         (onItemChange)="updateImageDesc($event)"
       >
         <ng-template pTemplate="item" let-item>
           <img
-            (click)="toggleFullScreen()"
             [src]="item.imageSrc"
-            style="width: 100%; display: block"
+            style="width: 100%;height: 80vh;"
           />
-          <div class="row mt-5">
-            <div class="text-center">
-              <p>{{ item.imageAlt }}</p>
-            </div>
-          </div>
         </ng-template>
       </p-galleria>
     </tab>
@@ -41,7 +35,7 @@
         [containerStyle]="{ 'max-width': '100%' }"
       >
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.imageSrc" style="width: 100%; display: block" />
+          <img [src]="item.imageSrc" style="width: 100%; height: 80vh;" />
         </ng-template>
       </p-galleria>
     </tab>
@@ -55,7 +49,7 @@
         [containerStyle]="{ 'max-width': '100%' }"
       >
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.imageSrc" style="width: 100%; display: block" />
+          <img [src]="item.imageSrc" style="width: 100%; height: 80vh;" />
         </ng-template>
       </p-galleria>
     </tab>
@@ -69,7 +63,7 @@
         [containerStyle]="{ 'max-width': '100%  ' }"
       >
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.imageSrc" style="width: 100%; display: block" />
+          <img [src]="item.imageSrc" style="width: 100%; height: 80vh;" />
         </ng-template>
       </p-galleria>
     </tab>

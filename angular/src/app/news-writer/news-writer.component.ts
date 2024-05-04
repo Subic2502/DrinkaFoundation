@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { catchError, throwError } from 'rxjs';
+import {ToastModule} from 'primeng/toast';
+import {MessageService} from 'primeng/api';
 
 interface FormData {
   Date: string;
@@ -15,7 +17,8 @@ interface FormData {
 @Component({
   selector: 'app-news-writer',
   templateUrl: './news-writer.component.html',
-  styleUrl: './news-writer.component.css'
+  styleUrl: './news-writer.component.css',
+  providers: [MessageService]
 })
 export class NewsWriterComponent implements OnInit {
 
@@ -29,7 +32,7 @@ export class NewsWriterComponent implements OnInit {
     Photos: []
   };
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private messageService:MessageService) { }
 
   ngOnInit(): void {
 
@@ -78,6 +81,7 @@ export class NewsWriterComponent implements OnInit {
       )
       .subscribe(Boolean => {
         console.log('Added news to database');
+        this.messageService.add({severity:'success', summary: 'Objavljeno!', detail: 'Vest je uspešno stavljana u bazu podataka i biće izlistana na sajtu!'});
       });
 
     // Optional: Clear form after submission (if desired)

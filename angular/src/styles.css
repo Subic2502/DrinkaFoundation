@@ -6,7 +6,7 @@
   }
 
   .nav-tabs > li { /* target all li elements within .nav-tabs */
-    background-color: white;
+    background-color: transparent;
     color   : black;
   }
   
@@ -47,6 +47,7 @@
     margin-top: -3px;
     background-color: transparent;  
     padding: 15px 0;
+    color: #404040;
   }
   
   .nav-tabs {

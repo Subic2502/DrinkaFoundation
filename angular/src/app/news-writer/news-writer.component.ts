@@ -32,6 +32,8 @@ export class NewsWriterComponent implements OnInit {
     Photos: []
   };
 
+  statusObjave:string="Neobjavljeno";
+
   constructor(private http: HttpClient,private messageService:MessageService) { }
 
   ngOnInit(): void {
@@ -76,11 +78,13 @@ export class NewsWriterComponent implements OnInit {
       .pipe(
         catchError(error => {
           console.error('Error', error);
+          this.statusObjave = "Doslo je do greske!";
           return throwError(() => new Error('Error'));
         })
       )
       .subscribe(Boolean => {
         console.log('Added news to database');
+        this.statusObjave = "Objavljeno!";
         this.messageService.add({severity:'success', summary: 'Objavljeno!', detail: 'Vest je uspešno stavljana u bazu podataka i biće izlistana na sajtu!'});
       });
 

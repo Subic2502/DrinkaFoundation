@@ -25,6 +25,7 @@ public class NewsController:ControllerBase
     {
         return _dataContext.News
         .Include(n => n.ListOfPhotos)
+        .OrderByDescending(n => n.Date)
         .ToList();
     }
 

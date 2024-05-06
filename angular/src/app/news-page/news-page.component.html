@@ -14,7 +14,7 @@
         </div>
     </div> -->
     <div *ngFor="let newsItem of newsList">
-        <app-news-card (click)="onCardClickListener(newsItem.id)" [title]="newsItem.title" [text]="newsItem.shortText" [author]="newsItem.author" [publishDate]="newsItem.date"></app-news-card>    
+        <app-news-card (click)="onCardClickListener(newsItem.id)" [title]="newsItem.title" [text]="newsItem.shortText" [author]="newsItem.author" [publishDate]="newsItem.date" [listOfPhotos]="newsItem.listOfPhotos"></app-news-card>    
     </div>
     <!-- <app-news-card [title]=""></app-news-card>
     <app-news-card></app-news-card>

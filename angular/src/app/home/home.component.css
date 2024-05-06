@@ -32,7 +32,7 @@
 
 .col-md-6 p, .col-md-6 h2 {
   opacity: 1;
-  font-size: 1.6em; /* Use vw units for dynamic font size */
+  font-size: 3em; /* Use vw units for dynamic font size */
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
@@ -43,11 +43,12 @@
   background-color: #C1CCC3; /* Background color for the button */
   color: #333; /* Text color for the button */
   padding: 10px 20px; /* Adjust padding as needed */
-  font-size: 1.4em; /* Adjust the font size as needed */
+  font-size: 2em; /* Adjust the font size as needed */
   border: none; /* Remove border */
   border-radius: 5px; /* Add border radius for rounded corners */
   cursor: pointer;
   transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  margin-bottom: 5vh;
 }
 
 .col-md-6 button:hover {
@@ -93,9 +94,20 @@
 
 @media (max-width: 768px) {
   .container {
-    height: 40vh; /* Apply 50vh height on small screens */
+    height: 45vh; /* Apply 50vh height on small screens */
   }
 }
 
+@media(max-width:768px){
+  .col-md-6 p, .col-md-6 h2{
+    font-size: 1.5em;
+  }
+}
+
+@media(max-width:768px){
+  .col-md-6 button{
+    font-size: 1.4em;
+  }
+}
 
   

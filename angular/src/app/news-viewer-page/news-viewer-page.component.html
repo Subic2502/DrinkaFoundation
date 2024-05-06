@@ -15,23 +15,16 @@
         <div class="col-12">
             <div *ngIf="news">
                 <!-- <img *ngFor="let photo of news.listOfPhotos" [src]="getPhotoUrl(photo.photoString)"> -->
-                <p-galleria
-                    [value]="news.listOfPhotos"
-                    [numVisible]="5"
-                    [circular]="true"
-                    [showItemNavigators]="true"
-                    [showThumbnails]="false"
-                    [containerStyle]="{  }"
-                    >
+                <p-galleria [value]="news.listOfPhotos" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
+                    [showThumbnails]="false" [containerStyle]="{  }">
                     <ng-template pTemplate="item" let-item>
-                        <img
-                            [src]="getPhotoUrl(item.photoString)"
-                            style="width: 100%;height: 80vh;"
-                        />
+                        <div>
+                            <img [src]="getPhotoUrl(item.photoString)" class="image-slider" />
+                        </div>
+
                     </ng-template>
                 </p-galleria>
             </div>
         </div>
     </div>
 </div>
-

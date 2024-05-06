@@ -8,64 +8,51 @@
           </p>
         </div>
       </div>
-      <p-galleria
-        [value]="imagesSpomenici"
-        [numVisible]="5"
-        [circular]="true"
-        [showItemNavigators]="true"
-        [showThumbnails]="false"
-        [containerStyle]="{  }"
-        (onItemChange)="updateImageDesc($event)"
-      >
+      <p-galleria [value]="imagesSpomenici" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
+        [showThumbnails]="false" [containerStyle]="{  }">
         <ng-template pTemplate="item" let-item>
-          <img
-            [src]="item.imageSrc"
-            style="width: 100%;height: 80vh;"
-            (click)="toggleFullScreen()"
-          />
+          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;" [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }" (click)="toggleFullScreen()" />
         </ng-template>
+        <ng-template pTemplate="caption" let-item>
+          <h4 style="margin-bottom: .5rem; color: #faf7f7;">Neki Naslov #toDo</h4>
+          <p>{{item.imageAlt}}</p>
+      </ng-template>
       </p-galleria>
     </tab>
     <tab heading="Slobodno vajarstvo">
-      <p-galleria
-        [value]="imagesSlVajarstvo"
-        [numVisible]="5"
-        [circular]="true"
-        [showItemNavigators]="true"
-        [showThumbnails]="false"
-        [containerStyle]="{ 'max-width': '100%' }"
-      >
+      <p-galleria [value]="imagesSlVajarstvo" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
+        [showThumbnails]="false" [containerStyle]="{  }">
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.imageSrc" style="width: 100%; height: 80vh;" />
+          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;" [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }" (click)="toggleFullScreen()" />
         </ng-template>
+        <ng-template pTemplate="caption" let-item>
+          <h4 style="margin-bottom: .5rem; color: #faf7f7;">Neki Naslov #toDo</h4>
+          <p>{{item.imageAlt}}</p>
+      </ng-template>
       </p-galleria>
     </tab>
     <tab heading="Prijatelji">
-      <p-galleria
-        [value]="imagesPrijalelji"
-        [numVisible]="5"
-        [circular]="true"
-        [showItemNavigators]="true"
-        [showThumbnails]="false"
-        [containerStyle]="{ 'max-width': '100%' }"
-      >
+      <p-galleria [value]="imagesPrijalelji" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
+        [showThumbnails]="false" [containerStyle]="{  }">
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.imageSrc" style="width: 100%; height: 80vh;" />
+          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;" [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }" (click)="toggleFullScreen()" />
         </ng-template>
+        <ng-template pTemplate="caption" let-item>
+          <h4 style="margin-bottom: .5rem; color: #faf7f7;">Neki Naslov #toDo</h4>
+          <p>{{item.imageAlt}}</p>
+      </ng-template>
       </p-galleria>
     </tab>
     <tab heading="Popis dela">
-      <p-galleria
-        [value]="imagesDela"
-        [numVisible]="5"
-        [circular]="true"
-        [showItemNavigators]="true"
-        [showThumbnails]="false"
-        [containerStyle]="{ 'max-width': '100%  ' }"
-      >
+      <p-galleria [value]="imagesDela" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
+        [showThumbnails]="false" [containerStyle]="{  }">
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.imageSrc" style="width: 100%; height: 80vh;" />
+          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;" [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }" (click)="toggleFullScreen()" />
         </ng-template>
+        <ng-template pTemplate="caption" let-item>
+          <h4 style="margin-bottom: .5rem; color: #faf7f7;">Neki Naslov #toDo</h4>
+          <p>{{item.imageAlt}}</p>
+      </ng-template>
       </p-galleria>
     </tab>
   </tabset>

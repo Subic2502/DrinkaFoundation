@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { Galleria } from 'primeng/galleria';
 import screenfull from 'screenfull';
 
 @Component({
@@ -6,16 +7,82 @@ import screenfull from 'screenfull';
   templateUrl: './dela-i-prijatelji-page.component.html',
   styleUrl: './dela-i-prijatelji-page.component.css'
 })
-export class DelaIPrijateljiPageComponent {
+export class DelaIPrijateljiPageComponent implements AfterViewInit, OnInit {
   imageDesc: string = ''; // Initialize image description
+  fullscreen: boolean = false;
+  @ViewChild('galleria') galleria?: Galleria;
+  onFullScreenListener: any;
+
+  ngOnInit(): void {
+    this.galleria = this.galleria?.element.nativeElement.querySelector("p-galleria");
+    console.log(this.galleria?.element.nativeElement);
+  }
+
+  ngAfterViewInit(): void {
+    console.log(this.galleria?.element.nativeElement);
+  }
 
   toggleFullScreen() {
-    
+    console.log("Kliknuo na sliku!");
+    this.fullscreen = !this.fullscreen;
+
+    const image = document.querySelector('.container img');
+    if (image) {
+      if (this.fullscreen) {
+        // Enter fullscreen mode
+        image.classList.add('fullscreen'); // Add a class for fullscreen styles
+        document.body.classList.add('overflow-hidden'); // Prevent body scroll
+      } else {
+        // Exit fullscreen mode
+        image.classList.remove('fullscreen');
+        document.body.classList.remove('overflow-hidden');
+      }
+    }
   }
-  updateImageDesc(event: any) {
-    const selectedItem = event.item;
-    this.imageDesc = selectedItem.imageAlt;
+
+  closePreviewFullScreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+    else if ((document as any)['mozCancelFullScreen']) {
+      (document as any)['mozCancelFullScreen']();
+    }
+    else if ((document as any)['webkitExitFullscreen']) {
+      (document as any)['webkitExitFullscreen']();
+    }
+    else if ((document as any)['msExitFullscreen']) {
+      (document as any)['msExitFullscreen']();
+    }
   }
+
+  openPreviewFullScreen() {
+    if (this.galleria) {
+      let elem = this.galleria?.element.nativeElement.querySelector(".p-galleria");
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      }
+      else if (elem['mozRequestFullScreen']) { /* Firefox */
+        elem['mozRequestFullScreen']();
+      }
+      else if (elem['webkitRequestFullscreen']) { /* Chrome, Safari & Opera */
+        elem['webkitRequestFullscreen']();
+      }
+      else if (elem['msRequestFullscreen']) { /* IE/Edge */
+        elem['msRequestFullscreen']();
+      }
+    }
+
+  }
+
+  galleriaClass() {
+    return `custom-galleria ${this.fullscreen ? 'fullscreen' : ''}`;
+  }
+
+
+  onFullScreenChange() {
+    this.fullscreen = !this.fullscreen;
+  }
+
 
   imagesSpomenici = [{
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/012.jpg',

@@ -14,8 +14,8 @@ body,html{
     opacity: 1;
     margin: 0; /* Remove all margins */
     padding: 0; /* Remove padding if any */
-    margin-top: 10vh;
-    scroll-margin-top: 10vh;
+    margin-top: 15vh;
+    scroll-margin-top: 15vh;
     
     /*box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1); /* Increase spread and adjust opacity */
     border: 2px solid #ccc; /* Set the border style and color */

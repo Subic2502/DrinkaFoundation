@@ -16,6 +16,10 @@ export class NewsViewerPageComponent implements OnInit {
 
   constructor(private http: HttpClient,private route: ActivatedRoute,private sanitizer:DomSanitizer) { }
 
+  getSanitizedText() {
+    return this.sanitizer.bypassSecurityTrustHtml(this.news?.longText ?? '');
+  }
+
   ngOnInit(): void {
     console.log("uslo u oninit");
     const id = this.route.snapshot.queryParams['id'];

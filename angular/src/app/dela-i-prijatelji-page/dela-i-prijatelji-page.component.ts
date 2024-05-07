@@ -13,6 +13,21 @@ export class DelaIPrijateljiPageComponent implements AfterViewInit, OnInit {
   @ViewChild('galleria') galleria?: Galleria;
   onFullScreenListener: any;
 
+  responsiveOptions:any[] = [
+    {
+        breakpoint: '1024px',
+        numVisible: 5
+    },
+    {
+        breakpoint: '768px',
+        numVisible: 3
+    },
+    {
+        breakpoint: '560px',
+        numVisible: 1
+    }
+];
+
   ngOnInit(): void {
     this.galleria = this.galleria?.element.nativeElement.querySelector("p-galleria");
     console.log(this.galleria?.element.nativeElement);

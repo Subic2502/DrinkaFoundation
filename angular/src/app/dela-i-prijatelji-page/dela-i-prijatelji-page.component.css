@@ -1,11 +1,27 @@
-.container{
+.container {
   margin-top: 15vh;
   width: 80%;
 }
 
-.container tabset{
+.container tabset {
   justify-content: center;
 }
 
+.galleria-class {
+  width: 100%;
+  height: 80vh;
+  display: block;
+}
 
+.grid {
+  justify-content: center;
+  height: 10vh; 
+  overflow: hidden;
+}
 
+@media (max-width: 768px) {
+  .galleria-class {
+    height: auto;
+    /* Apply 50vh height on small screens */
+  }
+}

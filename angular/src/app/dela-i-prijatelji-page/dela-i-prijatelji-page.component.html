@@ -1,58 +1,64 @@
 <div class="container">
   <tabset [justified]="true" class="dela-tabset">
     <tab heading="Spomenici">
-      <div class="row mt-2">
-        <div class="text-center lead">
-          <p>
-            <strong>Ispod slike mozete pročitati više o svakoj slici.</strong>
-          </p>
-        </div>
-      </div>
-      <p-galleria [value]="imagesSpomenici" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
-        [showThumbnails]="false" [containerStyle]="{  }">
+      <p-galleria [value]="imagesSpomenici" [numVisible]="5" [containerStyle]="{}"
+        [responsiveOptions]="responsiveOptions">
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;" [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }" (click)="toggleFullScreen()" />
+          <img class="galleria-class" [src]="item.imageSrc"
+            [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }"
+            (click)="toggleFullScreen()" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.imageSrc" class="thumbnail-img" />
+          </div>
         </ng-template>
         <ng-template pTemplate="caption" let-item>
-          <h4 style="margin-bottom: .5rem; color: #faf7f7;">Neki Naslov #toDo</h4>
+          <h4 style="margin-bottom: .5em; color: #faf7f7;">Neki Naslov #toDo</h4>
           <p>{{item.imageAlt}}</p>
-      </ng-template>
+        </ng-template>
       </p-galleria>
     </tab>
     <tab heading="Slobodno vajarstvo">
       <p-galleria [value]="imagesSlVajarstvo" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
         [showThumbnails]="false" [containerStyle]="{  }">
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;" [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }" (click)="toggleFullScreen()" />
+          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;"
+            [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }"
+            (click)="toggleFullScreen()" />
         </ng-template>
         <ng-template pTemplate="caption" let-item>
           <h4 style="margin-bottom: .5rem; color: #faf7f7;">Neki Naslov #toDo</h4>
           <p>{{item.imageAlt}}</p>
-      </ng-template>
+        </ng-template>
       </p-galleria>
     </tab>
     <tab heading="Prijatelji">
       <p-galleria [value]="imagesPrijalelji" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
         [showThumbnails]="false" [containerStyle]="{  }">
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;" [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }" (click)="toggleFullScreen()" />
+          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;"
+            [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }"
+            (click)="toggleFullScreen()" />
         </ng-template>
         <ng-template pTemplate="caption" let-item>
           <h4 style="margin-bottom: .5rem; color: #faf7f7;">Neki Naslov #toDo</h4>
           <p>{{item.imageAlt}}</p>
-      </ng-template>
+        </ng-template>
       </p-galleria>
     </tab>
     <tab heading="Popis dela">
       <p-galleria [value]="imagesDela" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
         [showThumbnails]="false" [containerStyle]="{  }">
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;" [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }" (click)="toggleFullScreen()" />
+          <img [src]="item.imageSrc" style="width: 100%;height: 80vh;"
+            [ngStyle]="{ width: !fullscreen ? '100%' : '', display: !fullscreen ? 'block' : '' }"
+            (click)="toggleFullScreen()" />
         </ng-template>
         <ng-template pTemplate="caption" let-item>
           <h4 style="margin-bottom: .5rem; color: #faf7f7;">Neki Naslov #toDo</h4>
           <p>{{item.imageAlt}}</p>
-      </ng-template>
+        </ng-template>
       </p-galleria>
     </tab>
   </tabset>

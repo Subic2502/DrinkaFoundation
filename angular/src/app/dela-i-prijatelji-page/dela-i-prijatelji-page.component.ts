@@ -116,43 +116,43 @@ export class DelaIPrijateljiPageComponent implements AfterViewInit, OnInit {
     imageAlt: 'Peta slika'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/035.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'sesta slika'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/050.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'sedma slika'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/054.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'osma slika'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/055.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'deveta slika'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/058.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'deseta slika'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/059.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'tamo neka slika'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/062.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'tamo neka slika'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/065.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'tamo neka slika'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/0368.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'tamo neka slika'
   }
     , {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/080.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'tamo neka slika'
   }
     , {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/086.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'tamo neka slika'
   }
     , {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/089.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'tamo neka slika'
   }
   ]
 
@@ -166,34 +166,34 @@ export class DelaIPrijateljiPageComponent implements AfterViewInit, OnInit {
     imageAlt: 'druga slika'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/099.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '3 slika'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/101.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '4 slika'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/102.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '5 slika'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/107.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '6 slika'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/109.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '7 slika'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/110.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '8 slika'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/112.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '9 slika'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/113.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '10 slika'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/114.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '11 slika'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/115.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '12 slika'
   }
   ]
 
@@ -203,28 +203,28 @@ export class DelaIPrijateljiPageComponent implements AfterViewInit, OnInit {
     imageAlt: 'Prva slika'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/dejanMedakovic.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '2 slika'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/dobricaCosic.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '3 slika'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/dobricaCosic2.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '4 slika'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/matijaBeckovic.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '5 slika'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/micaPopovic.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '6 slika'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/rajkoPetrovNogo.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '7 slika'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/stevanRaickovic.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '8 slika'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/stevanStanic.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: '9 slika'
   }
   ]
   /**-------------dela-------------------- */

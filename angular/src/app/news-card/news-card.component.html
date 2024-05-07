@@ -4,7 +4,7 @@
 <div class="news-card" (click)="onCardClick()">
 
     <div *ngIf="listOfPhotos.length === 0" class="news-image">
-      <img src='assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/113.jpg' alt="News Image">
+      <img src='assets/background-photo/Drinka-logo.png' alt="News Image">
     </div>
     <div *ngIf="listOfPhotos.length > 0" class="news-image">
       <img [src]="getPhotoUrl(listOfPhotos[0].photoString)" alt="News Image">

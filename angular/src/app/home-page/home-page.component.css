@@ -25,6 +25,12 @@ body,html{
     background: linear-gradient(to bottom, #6B736D, #7D867F);
 }
 
+@media(max-width:768px){
+    .scroll-section-home{
+      margin-top: 20vh;
+    }
+  }
+
 .scroll-section-aboutMe {
     margin: 0; /* Remove all margins */
     padding: 0; /* Remove padding if any */

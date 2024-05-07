@@ -32,10 +32,13 @@
 
 .col-md-6 p, .col-md-6 h2 {
   opacity: 1;
-  font-size: 2.5em; /* Use vw units for dynamic font size */
+  font-size: 2.3em; /* Use vw units for dynamic font size */
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
+}
+.col-md-6 h2{
+  margin-top: 5vh;
 }
 
 /* Add this to your styles.css */
@@ -43,7 +46,7 @@
   background-color: #C1CCC3; /* Background color for the button */
   color: #333; /* Text color for the button */
   padding: 10px 20px; /* Adjust padding as needed */
-  font-size: 1.8em; /* Adjust the font size as needed */
+  font-size: 1.6em; /* Adjust the font size as needed */
   border: none; /* Remove border */
   border-radius: 5px; /* Add border radius for rounded corners */
   cursor: pointer;

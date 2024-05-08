@@ -25,3 +25,61 @@
     /* Apply 50vh height on small screens */
   }
 }
+
+/*----------------------------------------------------------*/
+
+/* You can add global styles to this file, and also import other style files */
+.tab-panel {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.nav-tabs > li { /* target all li elements within .nav-tabs */
+  background-color: transparent;
+  color   : black;
+}
+
+
+.nav-tabs > li.open, .member-tabset > .nav-tabs > li:hover {
+  border-bottom: 4px solid #a89993;
+}
+
+.dela-tabset > .nav-tabs > li.open > a, .dela-tabset > .nav-tabs > li:hover > a {
+  /* border: 0 !important;
+  background: none !important; */
+  color: #000000;
+}
+
+.dela-tabset > .nav-tabs > li.open > a > i, .dela-tabset > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+
+.dela-tabset > .nav-tabs > li.open .dropdown-menu, .dela-tabset > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+
+.dela-tabset > .nav-tabs > li.active {
+  border-bottom: 4px solid #a89993;
+  position: relative;
+}
+
+.dela-tabset > .nav-tabs > li.active > a {
+  /* border: 0 !important; */
+  color: #333333;
+}
+
+.dela-tabset > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+
+.dela-tabset > .tab-content {
+  margin-top: -3px;
+  background-color: transparent;  
+  padding: 15px 0;
+  color: #404040;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0px;
+}

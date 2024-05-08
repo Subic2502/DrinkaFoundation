@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { Galleria } from 'primeng/galleria';
 import screenfull from 'screenfull';
+import {TabViewModule} from 'primeng/tabview';
+
 
 @Component({
   selector: 'app-dela-i-prijatelji-page',

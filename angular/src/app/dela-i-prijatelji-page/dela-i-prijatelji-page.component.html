@@ -1,6 +1,9 @@
 <div class="container">
   <tabset [justified]="true" class="dela-tabset">
-    <tab heading="Spomenici">
+    <tab >
+      <ng-template tabHeading>
+        <span class="badge badge-secondary bg-secondary">Spomenici</span>
+      </ng-template>
       <p-galleria [value]="imagesSpomenici" [numVisible]="5" [containerStyle]="{}"
         [responsiveOptions]="responsiveOptions">
         <ng-template pTemplate="item" let-item>
@@ -19,7 +22,10 @@
         </ng-template>
       </p-galleria>
     </tab>
-    <tab heading="Slobodno vajarstvo">
+    <tab>
+      <ng-template tabHeading>
+        <span class="badge badge-secondary bg-secondary">Slobodno vajarstvo</span>
+      </ng-template>
       <p-galleria [value]="imagesSlVajarstvo" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
         [showThumbnails]="false" [containerStyle]="{  }">
         <ng-template pTemplate="item" let-item>
@@ -33,7 +39,10 @@
         </ng-template>
       </p-galleria>
     </tab>
-    <tab heading="Prijatelji">
+    <tab>
+      <ng-template tabHeading>
+        <span class="badge badge-secondary bg-secondary">Prijatelji</span>
+      </ng-template>
       <p-galleria [value]="imagesPrijalelji" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
         [showThumbnails]="false" [containerStyle]="{  }">
         <ng-template pTemplate="item" let-item>
@@ -47,7 +56,10 @@
         </ng-template>
       </p-galleria>
     </tab>
-    <tab heading="Popis dela">
+    <tab>
+      <ng-template tabHeading>
+        <span class="badge badge-secondary bg-secondary">Popis dela</span>
+      </ng-template>
       <p-galleria [value]="imagesDela" [numVisible]="5" [circular]="true" [showItemNavigators]="true"
         [showThumbnails]="false" [containerStyle]="{  }">
         <ng-template pTemplate="item" let-item>
@@ -62,4 +74,18 @@
       </p-galleria>
     </tab>
   </tabset>
+  <p>----------------------------------------------
+    
+  </p>
+  <p-tabView>
+    <p-tabPanel header="Header 1">
+       Content 1
+    </p-tabPanel>
+    <p-tabPanel header="Header 2">
+        Content 2
+    </p-tabPanel>
+    <p-tabPanel header="Header 3">
+        Content 3
+    </p-tabPanel>
+</p-tabView>
 </div>

@@ -30,6 +30,7 @@ import { FormsModule } from '@angular/forms';
 import * as screenfull from 'screenfull';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NewsViewerPageComponent } from './news-viewer-page/news-viewer-page.component';
+import {TabViewModule} from 'primeng/tabview';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { NewsViewerPageComponent } from './news-viewer-page/news-viewer-page.com
     CarouselModule,
     GalleriaModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TabViewModule
   ],
   exports:[TabsModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

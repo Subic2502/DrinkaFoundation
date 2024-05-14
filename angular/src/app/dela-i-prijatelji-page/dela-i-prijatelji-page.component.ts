@@ -103,7 +103,7 @@ export class DelaIPrijateljiPageComponent implements AfterViewInit, OnInit {
 
   imagesSpomenici = [{
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/012.jpg',
-    imageAlt: 'Prva slika'
+    imageAlt: 'Spomenik Karađorđu u Orašcu,nalazi se u okviru spomen kompleksa Orašac, ispred OŠ "Prvi srpski ustanak"'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/020.jpg',
     imageAlt: 'druga slika'

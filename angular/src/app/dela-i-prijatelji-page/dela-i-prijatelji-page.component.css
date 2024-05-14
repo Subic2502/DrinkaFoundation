@@ -5,6 +5,7 @@
 
 .container tabset {
   justify-content: center;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .galleria-class {
@@ -17,6 +18,10 @@
   justify-content: center;
   height: 10vh; 
   overflow: hidden;
+}
+
+h4,p{
+  font-family: "Chakra Petch", sans-serif;
 }
 
 @media (max-width: 768px) {

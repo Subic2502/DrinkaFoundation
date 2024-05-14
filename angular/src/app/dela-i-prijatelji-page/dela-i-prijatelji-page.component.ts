@@ -106,55 +106,55 @@ export class DelaIPrijateljiPageComponent implements AfterViewInit, OnInit {
     imageAlt: 'Spomenik Karađorđu u Orašcu,nalazi se u okviru spomen kompleksa Orašac, ispred OŠ "Prvi srpski ustanak"'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/020.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: 'Živojin Mišić'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/025.jpg',
-    imageAlt: 'treca slika'
+    imageAlt: 'Stepa Stepanović'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/029.jpg',
-    imageAlt: 'cetvrta slika'
+    imageAlt: 'Drinka i spomenik Milošu Obrenoviću.'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/032.jpg',
-    imageAlt: 'Peta slika'
+    imageAlt: 'Spomenik Tanasku Rajiću( 1998. )'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/035.jpg',
-    imageAlt: 'sesta slika'
+    imageAlt: 'Spomenik Svetom vladici Nikolaju Velimiroviću - Soko Grad'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/050.jpg',
-    imageAlt: 'sedma slika'
+    imageAlt: 'Spomenik Nikoli Tesli na Beogradskom Aerodromu'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/054.jpg',
-    imageAlt: 'osma slika'
+    imageAlt: 'Nikola Tesla '
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/055.jpg',
-    imageAlt: 'deveta slika'
+    imageAlt: 'Mihajlo Pupin ( 1992. )'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/058.jpg',
-    imageAlt: 'deseta slika'
+    imageAlt: 'Đorđe Stanojević - Beograd'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/059.jpg',
-    imageAlt: 'tamo neka slika'
+    imageAlt: 'Jovan Cvijić - Loznica'
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/062.jpg',
-    imageAlt: 'tamo neka slika'
+    imageAlt: 'Filip Višnjić '
   }, {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/065.jpg',
-    imageAlt: 'tamo neka slika'
+    imageAlt: 'Jovan Dučić'
   }, {
-    imageSrc: 'assets/carousel/spomenici/01%20Spomenici/0368.jpg',
-    imageAlt: 'tamo neka slika'
-  }
-    , {
+    imageSrc: 'assets/carousel/spomenici/01%20Spomenici/068.jpg',
+    imageAlt: 'Miloš Crnjanski - Kalemegdan'
+  },
+  {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/080.jpg',
-    imageAlt: 'tamo neka slika'
-  }
-    , {
+    imageAlt: 'Karađorđe i Kralj Petar I'
+  },
+  {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/086.jpg',
-    imageAlt: 'tamo neka slika'
+    imageAlt: 'Dositej Obradović'
   }
     , {
     imageSrc: 'assets/carousel/spomenici/01%20Spomenici/089.jpg',
-    imageAlt: 'tamo neka slika'
+    imageAlt: 'Miloš Crnjanski i Desanka Maksimović'
   }
   ]
 
@@ -162,77 +162,71 @@ export class DelaIPrijateljiPageComponent implements AfterViewInit, OnInit {
 
   imagesSlVajarstvo = [{
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/097.jpg',
-    imageAlt: 'Prva slika'
+    imageAlt: 'Rado ide iz Srbije u vojnike ( 1989. )'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/098.jpg',
-    imageAlt: 'druga slika'
+    imageAlt: 'Posle Kajmačkalana ( 1989. )'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/099.jpg',
-    imageAlt: '3 slika'
+    imageAlt: 'Hadži Prodanova buna ( 1990. )'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/101.jpg',
-    imageAlt: '4 slika'
+    imageAlt: 'Kolar( 1992. ) i Potkivač Zobnatnica( 1992. )'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/102.jpg',
-    imageAlt: '5 slika'
+    imageAlt: 'Deca Sergeja Jesenjina() i Dečak i pas()'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/107.jpg',
-    imageAlt: '6 slika'
+    imageAlt: 'Konj( 1990. )'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/109.jpg',
-    imageAlt: '7 slika'
+    imageAlt: 'Pas - Beograd (1982.)'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/110.jpg',
-    imageAlt: '8 slika'
+    imageAlt: 'Pas - Beograd (1982.)'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/112.jpg',
-    imageAlt: '9 slika'
+    imageAlt: 'Slobodno vajarstvo - mačka'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/113.jpg',
-    imageAlt: '10 slika'
+    imageAlt: 'Vuk (1990.)'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/114.jpg',
-    imageAlt: '11 slika'
+    imageAlt: 'Puma(1989.) i Medved(1980.)'
   }, {
     imageSrc: 'assets/carousel/slobodnoVajarstvo/02%20Slobodno%20vajarstvo/115.jpg',
-    imageAlt: '12 slika'
+    imageAlt: 'Lav(1990.)'
   }
   ]
 
   /*-------------------------------prijatelji--------------------------------------------*/
   imagesPrijalelji = [{
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/131.jpg',
-    imageAlt: 'Prva slika'
+    imageAlt: 'Pesma Slobodana Markovića SFINGA- Napisana na vratima Drinkinog ateljea'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/dejanMedakovic.jpg',
-    imageAlt: '2 slika'
+    imageAlt: 'Dejan Medaković'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/dobricaCosic.jpg',
-    imageAlt: '3 slika'
+    imageAlt: 'Dobrica Ćosić'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/dobricaCosic2.jpg',
-    imageAlt: '4 slika'
+    imageAlt: 'Dobrica Ćosić'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/matijaBeckovic.jpg',
-    imageAlt: '5 slika'
+    imageAlt: 'Matija Bećković'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/micaPopovic.jpg',
-    imageAlt: '6 slika'
+    imageAlt: 'Mića Popović'
   }, {
     imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/rajkoPetrovNogo.jpg',
-    imageAlt: '7 slika'
-  }, {
-    imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/stevanRaickovic.jpg',
-    imageAlt: '8 slika'
-  }, {
-    imageSrc: 'assets/carousel/prijatelji/03%20Prijatelji/stevanStanic.jpg',
-    imageAlt: '9 slika'
+    imageAlt: 'Rajko Petrov Nogo, Stevan Raičković i Stevan Stanić'
   }
   ]
   /**-------------dela-------------------- */
   imagesDela = [{
     imageSrc: 'assets/carousel/dela/04%20Dela/162.jpg',
-    imageAlt: 'Prva slika'
+    imageAlt: 'Popis Drinkinih dela'
   }]
 
 }
